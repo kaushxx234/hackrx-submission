@@ -1,12 +1,22 @@
-﻿fastapi
-uvicorn
-gunicorn
-python-dotenv
-requests
-pypdf
-pinecone-client
-langchain-pinecone
-langchain-openai
-langchain
-langchain-community
-langchain-google-genai
+# Final requirements for lightweight serverless deployment
+
+# Web Server
+fastapi==0.111.0
+uvicorn==0.30.1
+gunicorn==22.0.0
+
+# Utilities
+python-dotenv==1.0.1
+requests==2.32.3
+pypdf==4.2.0
+
+# LangChain Core and Integrations
+langchain==0.2.5
+langchain-community==0.2.5
+langchain-core==0.2.8
+langchain-text-splitters==0.2.1
+
+# AI and Database Connectors
+langchain-google-genai==1.0.6
+langchain-pinecone==0.1.1
+pinecone-client==4.1.2
