@@ -47,7 +47,7 @@ app = FastAPI(
 
 def get_api_keys_from_env():
     return {
-        "openai": os.getenv("OPENAI_API_KEY"),
+        "google": os.getenv("GOOGLE_API_KEY"),
         "pinecone_key": os.getenv("PINECONE_API_KEY"),
         "pinecone_env": os.getenv("PINECONE_ENVIRONMENT"),
     }
