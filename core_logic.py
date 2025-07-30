@@ -78,7 +78,7 @@ def create_qa_chain(api_keys: dict):
         vector_store = PineconeVectorStore.from_documents(
             documents, embeddings, index_name=index_name
         )
-        retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+        retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 3})
         
         # --- SWAP OUT THE LANGUAGE MODEL ---
         # Instead of ChatOpenAI, we use ChatGoogleGenerativeAI with a Gemini model.
